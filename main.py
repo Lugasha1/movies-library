@@ -1,2 +1,3 @@
-print("hello my")
-print("world")
+print("hello all")
+print("hello Mike")
+print("bye!")
