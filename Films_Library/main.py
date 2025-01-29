@@ -4,6 +4,7 @@ class MoviesLibrary:
         self.data = {}
         for genre in genres:
             self.data[genre] = movies_list
+        self.data = {genre: [] for genre in genres}
 
     def add_movie(self, genre, title):
         self.data[genre].append(title)
