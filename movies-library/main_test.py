@@ -17,8 +17,9 @@ class TestMoviesLibrary(unittest.TestCase):
         library.add_movie('Комедия', 'Фильм 1')
         library.add_movie('Ужасы', 'Фильм 2')
         self.assertEqual(library.recommend('Комедия'), ['Фильм 1'])
-        self.assertEqual(library.recommend('Ужасы'), ['Фильм 2'])  # Ожидаемая ошибка
+        self.assertEqual(library.recommend('Ужасы'), ['Фильм 2'])  # Здесь тест упадёт!
 
 
 if __name__ == '__main__':
     unittest.main()
+
